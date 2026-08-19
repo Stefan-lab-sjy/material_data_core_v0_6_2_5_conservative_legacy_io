@@ -1,4 +1,11 @@
-# Material Data Core + Material Agent v0.6.2.4
+# Material Data Core + Material Agent v0.6.2.5
+
+## v0.6.2.5 本次重点：历史目录采用保守 I/O 证据规则
+
+对于已经计算结束的 VASP 文件夹，最终目录中的 `WAVECAR` / `CHGCAR` 不能证明它们在运行前就存在。
+因此本版将历史目录的确定输入收紧为 `INCAR / POSCAR / KPOINTS / POTCAR` 加 workflow 特殊输入（例如 HSE band 的 `KPATH.in`、`HIGH_SYMMETRY_POINTS`）。
+`ISTART / ICHARG` 只作为可能的依赖提示，不再自动把 `WAVECAR / CHGCAR` 改成 input。
+
 
 ## v0.6.2.4 本次重点
 
