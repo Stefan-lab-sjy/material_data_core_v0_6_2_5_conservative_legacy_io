@@ -1,0 +1,8 @@
+ENCUT = 400
+EDIFF = 1E-6 ! SCF convergence
+GGA = PE
+NSW = 0
+IBRION = -1
+LOPTICS = .TRUE.
+CSHIFT = 0.1
+NEDOS = 2000

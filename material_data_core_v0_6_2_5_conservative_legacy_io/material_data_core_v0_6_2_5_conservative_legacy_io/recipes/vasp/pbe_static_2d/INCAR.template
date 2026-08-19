@@ -1,0 +1,12 @@
+SYSTEM = material-agent / PBE 2D static
+PREC   = Accurate
+GGA    = PE
+ENCUT  = ${ENCUT}
+EDIFF  = ${EDIFF}
+IBRION = -1
+NSW    = 0
+ISMEAR = 0
+SIGMA  = ${SIGMA}
+LREAL  = .FALSE.
+LWAVE  = .TRUE.
+LCHARG = .TRUE.
