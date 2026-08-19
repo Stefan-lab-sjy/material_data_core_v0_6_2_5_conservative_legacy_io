@@ -1,0 +1,15 @@
+SYSTEM = material-agent / PBE 2D optics
+PREC   = Accurate
+GGA    = PE
+ENCUT  = ${ENCUT}
+EDIFF  = ${EDIFF}
+IBRION = -1
+NSW    = 0
+ISMEAR = 0
+SIGMA  = ${SIGMA}
+LOPTICS = .TRUE.
+CSHIFT  = ${CSHIFT}
+NEDOS   = ${NEDOS}
+LREAL   = .FALSE.
+LWAVE   = .FALSE.
+LCHARG  = .FALSE.

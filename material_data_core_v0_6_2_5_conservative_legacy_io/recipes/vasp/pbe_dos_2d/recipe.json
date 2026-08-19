@@ -1,0 +1,13 @@
+{
+  "recipe_id": "vasp.pbe.dos.2d.v1",
+  "version": "1.0.0",
+  "code": "vasp",
+  "task_type": "dos",
+  "method": "PBE",
+  "dimensionality": "2D",
+  "description": "Non-self-consistent DOS template using an existing charge density.",
+  "template_files": {"INCAR": "INCAR.template"},
+  "default_parameters": {"ENCUT": 500, "EDIFF": "1E-7", "NEDOS": 2000, "SIGMA": 0.05},
+  "required_runtime_inputs": ["POSCAR", "POTCAR", "KPOINTS", "CHGCAR"],
+  "expected_outputs": ["OUTCAR", "DOSCAR", "vasprun.xml"]
+}

@@ -1,0 +1,13 @@
+{
+  "recipe_id": "vasp.pbe.static.2d.v1",
+  "version": "1.0.0",
+  "code": "vasp",
+  "task_type": "static",
+  "method": "PBE",
+  "dimensionality": "2D",
+  "description": "Starting template for a converged 2D PBE static/SCF calculation.",
+  "template_files": {"INCAR": "INCAR.template"},
+  "default_parameters": {"ENCUT": 500, "EDIFF": "1E-7", "SIGMA": 0.05},
+  "required_runtime_inputs": ["POSCAR", "POTCAR", "KPOINTS"],
+  "expected_outputs": ["OUTCAR", "OSZICAR", "vasprun.xml", "CHGCAR", "WAVECAR"]
+}

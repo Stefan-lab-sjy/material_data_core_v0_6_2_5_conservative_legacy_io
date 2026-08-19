@@ -1,0 +1,14 @@
+SYSTEM = material-agent / PBE 2D relaxation
+PREC   = Accurate
+GGA    = PE
+ENCUT  = ${ENCUT}
+EDIFF  = ${EDIFF}
+EDIFFG = ${EDIFFG}
+IBRION = 2
+NSW    = ${NSW}
+ISIF   = ${ISIF}
+ISMEAR = 0
+SIGMA  = ${SIGMA}
+LREAL  = Auto
+LWAVE  = .FALSE.
+LCHARG = .FALSE.

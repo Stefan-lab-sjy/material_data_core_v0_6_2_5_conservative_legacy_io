@@ -1,0 +1,15 @@
+SYSTEM = material-agent / PBE 2D DOS
+PREC   = Accurate
+GGA    = PE
+ENCUT  = ${ENCUT}
+EDIFF  = ${EDIFF}
+IBRION = -1
+NSW    = 0
+ICHARG = 11
+ISMEAR = -5
+SIGMA  = ${SIGMA}
+NEDOS  = ${NEDOS}
+LORBIT = 11
+LREAL  = .FALSE.
+LWAVE  = .FALSE.
+LCHARG = .FALSE.

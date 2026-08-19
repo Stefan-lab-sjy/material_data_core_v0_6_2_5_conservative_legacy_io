@@ -1,0 +1,1 @@
+Generic standalone files can be placed here for INGEST_ALL.bat.
